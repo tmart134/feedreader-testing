@@ -81,10 +81,10 @@ $(function() {
         });
 
 
-        it('should have at least 1 entry', function(){
+        it('should have at least 1 entry in the feed', function(){
 
-            var firstEntry = $('.entry')[0];
-            expect(firstEntry).toBeInDOM();
+            var feed = $('.feed');
+            expect(feed).toContainElement('article.entry');
         
         })
 
